@@ -3,19 +3,19 @@ Projeto da 1ª avaliação da disciplina de Introdução a Computação (site es
 
 --- (colocar aqui um paragrafo de descrição) ---
 
-## Desenvolvedoras:
-Micaella Cabral  –  Layout e Componentes.<br>
-Júlia Veríssimo  –  Estilo e Documentação.<br>
-Mariana Xavier   –  Estrutura e Acessibilidade.
+### Desenvolvedoras:
+Micaella Cabral – Layout e Componentes.<br>
+Júlia Veríssimo – Estilo e Documentação.<br>
+Mariana Xavier – Estrutura e Acessibilidade.
 
-## Como acessar nosso site:
+### Como acessar nosso site:
 Para ter acesso ao site do Studio ta.tu, abra o arquivo `index.html`.
 
 ### Paleta de cores:
 
-## Fontes utilizadas:
+### Fontes utilizadas:
 
-## Checklist:
+### Checklist:
 
 - [ ]  3 páginas mínimas (Home/Sobre/Contato) + links funcionando.
 - [ ]  `header`, `nav`, `main`, `footer` usados com propósito.
