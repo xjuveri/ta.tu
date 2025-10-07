@@ -13,9 +13,9 @@ Para ter acesso ao site do Studio ta.tu, abra o arquivo `index.html`.
 
 ### Paleta de cores:
 Cor primária: `#0D0E20`<br>
-Cor secundária: #2D1C7F<br>
-Cor destaque: #C8B3F6<br>
-Cor fundo: #7546E8
+Cor secundária: `#2D1C7F`<br>
+Cor destaque: `#C8B3F6`<br>
+Cor fundo: `#7546E8`
 
 ### Fontes utilizadas:
 
