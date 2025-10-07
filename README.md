@@ -12,7 +12,10 @@ Mariana Xavier – Estrutura e Acessibilidade.
 Para ter acesso ao site do Studio ta.tu, abra o arquivo `index.html`.
 
 ### Paleta de cores:
---- (em hexadecimal) ---
+Cor primária: #0D0E20
+Cor secundária: #2D1C7F
+Cor destaque: #C8B3F6
+Cor fundo: #7546E8
 
 ### Fontes utilizadas:
 
