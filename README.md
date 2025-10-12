@@ -1,8 +1,9 @@
 # ta.tu
 Projeto da 1ª avaliação da disciplina de Introdução a Computação (site estático com HTML + CSS).
-
---- (colocar aqui um paragrafo de descrição) ---
-
+<hr>
+Somos um estúdio de tatuagem dedicado a unir o melhor do tradição com as novas tendências do universo da tatuagem. Nosso objetivo é transformar a sua ideia em uma arte única e personalizada. Além do desenho, damos atenção ao posicionamento, tamanho, composição e pigmentação da tatuagem no seu corpo, garantindo que cada arte fique harmônica e destaque o estilo de quem a usa.<br>
+Priorizamos biosegurança, seguindo todos os protocolos de higiene e cuidado, e contamos com uma equipe de profissionais altamente qualificados, apaixonados pelo que fazem.
+<hr>
 ### Desenvolvedoras:
 Júlia Veríssimo – Estilo e Documentação.<br>
 Micaella Cabral – Layout e Componentes.<br>
