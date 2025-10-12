@@ -18,7 +18,6 @@ body {
   color: var(--cor-destaque);
 }
 
-/* utilidades de acessibilidade */
 .sr-only {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
@@ -33,7 +32,6 @@ body {
 
 .wrap { width: min(100% - 2rem, 1100px); margin-inline: auto; }
 
-/* NAVBAR */
 .navbar { background: var(--cor-primaria); padding: 1rem 0; }
 .navbar .wrap {
   display: flex; justify-content: space-between; align-items: center; position: relative;
@@ -46,12 +44,10 @@ body {
 .menu a:hover { opacity: .85; }
 .menu a[aria-current="page"] { text-decoration: underline; }
 
-/* SEÇÕES */
 .bloco { margin-block: 2rem 2.5rem; }
 .sec-header h1, .sec-header h2 { margin: 0 0 .35rem; color: var(--cor-destaque); }
 .sec-header p { margin: 0; opacity: .95; }
 
-/* SOBRE GRID */
 .sobre__grid { display: flex; gap: 1.25rem; flex-wrap: wrap; margin-top: 1rem; }
 .sobre__texto, .sobre__lista {
   flex: 1 1 320px;
@@ -64,7 +60,6 @@ body {
 }
 .sobre__texto h2, .sobre__texto h3, .sobre__lista h3 { margin-top: 0; }
 
-/* CARDS COM IMG + ALT */
 .cards { display: flex; flex-wrap: wrap; gap: 1.25rem; margin-top: 1rem; }
 .card {
   position: relative;
@@ -76,7 +71,7 @@ body {
   overflow: hidden;
   transition: transform .15s, box-shadow .15s;
 }
-/* imagem como conteúdo (acessível) */
+
 .card-bg {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
@@ -84,7 +79,7 @@ body {
   filter: brightness(0.6); /* escurece para legibilidade */
   z-index: 0;
 }
-/* overlay opcional (ajusta o tom) */
+
 .card::before {
   content: "";
   position: absolute; inset: 0;
@@ -98,7 +93,6 @@ body {
 }
 .card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(13,14,32,.45); }
 
-/* PRODUTOS E TABELA */
 .lista-produtos {
   display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; margin: .75rem 0 1.25rem; padding: 0;
   list-style: disc inside;
@@ -113,7 +107,6 @@ body {
 .aviso-agenda { margin-top: .75rem; opacity: .9; }
 .aviso-agenda a { color: var(--cor-destaque); font-weight: 700; text-decoration: underline; }
 
-/* FOOTER */
 .footer {
   border-top: 1px solid rgba(13,14,32,.35);
   background: linear-gradient(0deg, var(--cor-primaria), rgba(13,14,32,.85));
@@ -122,7 +115,6 @@ body {
 }
 .footer small { opacity: .9; }
 
-/* RESPONSIVO */
 @media (max-width: 760px) {
   .navbar .wrap { flex-direction: column; gap: .5rem; }
   .menu { position: static; transform: none; }
