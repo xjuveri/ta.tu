@@ -11,7 +11,7 @@ Micaella Cabral – Layout e Componentes.<br>
 Mariana Xavier – Estrutura e Acessibilidade.
 
 ### Como acessar nosso site:
-Para ter acesso ao site do Studio ta.tu, abra o arquivo `index.html`.
+Para ter acesso ao site do Estúdio ta.tu, abra o arquivo `index.html`.
 
 ### Paleta de cores:
 Cor primária: `#0D0E20`<br>
