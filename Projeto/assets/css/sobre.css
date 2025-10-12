@@ -1,0 +1,129 @@
+* {
+  font-family: "Pirata One", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+:root {
+  --cor-primaria: #0D0E20;
+  --cor-secundaria: #2D1C7F;
+  --cor-fundo: #7546E8;
+  --cor-destaque: #C8B3F6;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--cor-fundo);
+  color: var(--cor-destaque);
+}
+
+/* utilidades de acessibilidade */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.4));
+}
+
+.wrap { width: min(100% - 2rem, 1100px); margin-inline: auto; }
+
+/* NAVBAR */
+.navbar { background: var(--cor-primaria); padding: 1rem 0; }
+.navbar .wrap {
+  display: flex; justify-content: space-between; align-items: center; position: relative;
+}
+.menu {
+  position: absolute; left: 50%; transform: translateX(-50%);
+  display: flex; gap: 1.5rem;
+}
+.menu a { color: var(--cor-destaque); text-decoration: none; font-weight: 600; transition: opacity .2s; }
+.menu a:hover { opacity: .85; }
+.menu a[aria-current="page"] { text-decoration: underline; }
+
+/* SEÇÕES */
+.bloco { margin-block: 2rem 2.5rem; }
+.sec-header h1, .sec-header h2 { margin: 0 0 .35rem; color: var(--cor-destaque); }
+.sec-header p { margin: 0; opacity: .95; }
+
+/* SOBRE GRID */
+.sobre__grid { display: flex; gap: 1.25rem; flex-wrap: wrap; margin-top: 1rem; }
+.sobre__texto, .sobre__lista {
+  flex: 1 1 320px;
+  background: var(--cor-secundaria);
+  border: 2px solid var(--cor-primaria);
+  border-radius: 16px;
+  padding: 1.25rem;
+  color: var(--cor-destaque);
+  box-shadow: 0 3px 10px rgba(13,14,32,.35);
+}
+.sobre__texto h2, .sobre__texto h3, .sobre__lista h3 { margin-top: 0; }
+
+/* CARDS COM IMG + ALT */
+.cards { display: flex; flex-wrap: wrap; gap: 1.25rem; margin-top: 1rem; }
+.card {
+  position: relative;
+  flex: 1 1 240px;
+  border: 2px solid var(--cor-primaria);
+  border-radius: 16px;
+  min-height: 200px;
+  box-shadow: 0 3px 10px rgba(13,14,32,.35);
+  overflow: hidden;
+  transition: transform .15s, box-shadow .15s;
+}
+/* imagem como conteúdo (acessível) */
+.card-bg {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6); /* escurece para legibilidade */
+  z-index: 0;
+}
+/* overlay opcional (ajusta o tom) */
+.card::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: rgba(13, 14, 32, 0.25);
+  z-index: 0;
+}
+.card-content {
+  position: relative; z-index: 1;
+  padding: 1.25rem;
+  color: var(--cor-destaque);
+}
+.card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(13,14,32,.45); }
+
+/* PRODUTOS E TABELA */
+.lista-produtos {
+  display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; margin: .75rem 0 1.25rem; padding: 0;
+  list-style: disc inside;
+}
+.tabela-wrap { overflow-x: auto; background: rgba(45,28,127,.35); border-radius: 16px; border: 2px solid var(--cor-primaria); }
+.tabela { width: 100%; border-collapse: collapse; min-width: 560px; color: var(--cor-destaque); }
+.tabela thead th { background: var(--cor-secundaria); border-bottom: 2px solid var(--cor-primaria); padding: .75rem 1rem; text-align: left; font-weight: 800; }
+.tabela tbody td { padding: .75rem 1rem; border-bottom: 1px solid rgba(13,14,32,.45); }
+.tabela tbody tr:nth-child(even) { background: rgba(200,179,246,.07); }
+.tabela tbody tr:hover { background: rgba(200,179,246,.12); }
+
+.aviso-agenda { margin-top: .75rem; opacity: .9; }
+.aviso-agenda a { color: var(--cor-destaque); font-weight: 700; text-decoration: underline; }
+
+/* FOOTER */
+.footer {
+  border-top: 1px solid rgba(13,14,32,.35);
+  background: linear-gradient(0deg, var(--cor-primaria), rgba(13,14,32,.85));
+  color: var(--cor-destaque);
+  padding: 1rem 0;
+}
+.footer small { opacity: .9; }
+
+/* RESPONSIVO */
+@media (max-width: 760px) {
+  .navbar .wrap { flex-direction: column; gap: .5rem; }
+  .menu { position: static; transform: none; }
+}
